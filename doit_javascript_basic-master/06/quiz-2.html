@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Circle 객체</title>
+	<style>
+		body { text-align: center; font-size:1.2em; line-height: 2em;}
+	</style>
+</head>
+<body>
+	<script>
+		var r = prompt("원의 반지름은? (cm)");
+		function circle(r) {
+			this.radius = r;
+			this.circum = Math.round(2 * r * Math.PI);
+			this.area = Math.round(r * r * Math.PI);
+
+			document.write("반지름이 " + r + "cm일 때<br>원의 둘레 : 약 " + circum + "cm<br>" + "원의 넓이 : 약 " + area + "cm²")
+		}
+		
+		circle(r);
+	</script>
+</body>
+</html>
