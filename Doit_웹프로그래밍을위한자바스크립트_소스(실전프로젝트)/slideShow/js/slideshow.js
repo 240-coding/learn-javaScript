@@ -10,7 +10,7 @@ imgs[index].style.display = "block"; // 하나의 이미지만 보이게 함
 document.querySelector("#prev").onclick = function() { // 이전 버튼 클릭시
     imgs[index].style.display = "none"; // 원래 이미지 숨김
     if (index == 0) {
-        index = 3;
+        index = imgs.length - 1;
     }
     else {
         index--;
@@ -20,7 +20,7 @@ document.querySelector("#prev").onclick = function() { // 이전 버튼 클릭�
 
 document.querySelector("#next").onclick = function() { // 다음 버튼 클릭시
     imgs[index].style.display = "none";
-    if (index == 3) {
+    if (index == imgs.length - 1) {
         index = 0;
     }
     else {
